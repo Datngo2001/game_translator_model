@@ -1,4 +1,4 @@
 import tensorflow as tf
-mnist = tf.keras.datasets.mnist
+from datasets import load_dataset
 
-dataset = mnist.load_dataset("yhavinga/ccmatrix", "en-nl", streaming=True)
+dataset = load_dataset("yhavinga/ccmatrix", "en-nl", streaming=True, trust_remote_code=True)
