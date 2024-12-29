@@ -1,19 +1,11 @@
 {
     "configurations": [
         {
-            "name": "Docker: Python - General",
-            "type": "docker",
+            "name": "Python Debugger: Current File",
+            "type": "debugpy",
             "request": "launch",
-            "preLaunchTask": "docker-run: debug",
-            "python": {
-                "pathMappings": [
-                    {
-                        "localRoot": "${workspaceFolder}",
-                        "remoteRoot": "/app"
-                    }
-                ],
-                "projectType": "general"
-            }
+            "program": "main.py",
+            "console": "integratedTerminal"
         }
     ]
 }
